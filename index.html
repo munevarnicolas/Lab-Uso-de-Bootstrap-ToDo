@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Lista de Tareas</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-check-circle"></i> MisTareas
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        
+        <div class="text-center mb-4" id="inicio">
+            <h1 id="titulo">Mi Lista de Tareas</h1>
+        </div>
+
+        <div id="alerta" class="alert alert-success d-none">
+            <i class="bi bi-check-circle-fill"></i> Tarea agregada con exito
+        </div>
+
+        <div class="card mb-4" id="agregar">
+            <div class="card-body">
+                <h5>Agregar Nueva Tarea</h5>
+                <form action="" id="formulario-tarea">
+                    <input type="text" class="form-control mb-3" id="nueva-tarea" placeholder="Ingrese una tarea" required>
+                    <button type="submit" class="btn btn-primary" id="boton-agregar">
+                        <i class="bi bi-plus-circle"></i> Agregar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card" id="tareas">
+            <div class="card-body">
+                <h5>Mis Tareas</h5>
+                <ul class="list-group" id="lista-tareas">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Estudiar HTML
+                        <button class="btn btn-danger btn-sm boton-eliminar">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Tomar cafecito
+                        <button class="btn btn-danger btn-sm boton-eliminar">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Estudiar JS
+                        <button class="btn btn-danger btn-sm boton-eliminar">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>Creado por Nicolas Munevar</p>
+            <a href="https://www.linkedin.com/in/munevarnicolas/" class="text-white me-3">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/munevarnicolas" class="text-white">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
